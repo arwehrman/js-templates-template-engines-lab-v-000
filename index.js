@@ -26,5 +26,3 @@ function createPost() {
     var commentsSection = document.getElementById("comments");
     commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
   }
-
-}
