@@ -28,9 +28,3 @@ function postComment() {
   var commentsSection = document.getElementById("comments");
   commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
 }
-    var commentText = document.getElementById("commentText").value;
-    var commenterName = document.getElementById("commenter").value;
-
-    var commentsSection = document.getElementById("comments");
-    commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
-  }
