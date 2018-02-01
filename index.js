@@ -8,21 +8,21 @@ function createPost() {
   var post = document.getElementById("postText").value;
 
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
-  
+
     var blogSection = postTemplate({ 'title': postTitle, 'body': post, 'poster': postAuthor });
     var commentsSection = commentsTemplate();
     var postElement = document.getElementById("post");
-  
+
     postElement.innerHTML = blogSection;
     postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
   }
-  
+
   function postComment() {
     var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
-  
+
     var commentText = document.getElementById("commentText").value;
     var commenterName = document.getElementById("commenter").value;
-  
+
     var commentsSection = document.getElementById("comments");
     commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
   }
