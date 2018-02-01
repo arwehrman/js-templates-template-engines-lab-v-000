@@ -4,18 +4,21 @@
     <title>JavaScript lodash Templates Lab</title>
   </head>
   <body>
-    <article>
-      <header>post title</header>
     <!--main-->
       <!--/main-->
+    <article>
+      <header>post title</header>
+      <p>blog text </p>
+      <footer>post author</footer>
+    </article>
+    
     <form id= post-form onsubmit="createPost();return false;">
         Post Title: <input type="text" id="postTitle"><br>
         Post Author: <input type="text" id="postAuthor"><br>
         Post: <input type="textarea" id="postText"><br>
         <input type="submit">
       </form>
-      <footer>post author</footer>
-    </article>
+    
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
