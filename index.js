@@ -3,5 +3,5 @@ function createPost() {
   var author = document.getElementById("postAuthor").value;
   var post = document.getElementById("postText").value;
 
-  
+
 }
